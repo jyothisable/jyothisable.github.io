@@ -1,13 +1,19 @@
 header {
-    text-align: center;
+
 }
 
 header img {
     width: 40%;
+    display: inline;
 }
-
+#info {
+    display: inline;
+    text-align: center;
+}
 * {
-    background-color:aliceblue;
+    background-color:#280175;
+    color: white;
+    box-sizing: border-box;
 }
 
 footer{
