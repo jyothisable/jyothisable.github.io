@@ -1,21 +1,32 @@
-header {
 
-}
 
-header img {
-    width: 40%;
-    display: inline;
-}
-#info {
-    display: inline;
-    text-align: center;
-}
 * {
     background-color:#280175;
     color: white;
-    box-sizing: border-box;
+    box-sizing:content-box;
 }
 
 footer{
     text-align: center;
 }
+
+.avatar {
+    float: left;
+    width: 30%;
+    margin: 25px;
+    border-radius: 15%;
+  }
+  
+  .username {
+    margin-top: 40px;
+  }
+  
+  .comment {
+    margin: 10px;
+    font-size:1.2em;
+    overflow: hidden;  /* This is important */
+  }
+
+  .column {
+      overflow: hidden;
+  }
