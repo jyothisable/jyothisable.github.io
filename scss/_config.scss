@@ -1,0 +1,20 @@
+// Resets
+@import "resets/_normalize.scss";
+@import "resets/_reset-local.scss";
+@import "resets/_typography.scss";
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93');
+
+// Variables
+$color1 : #5720b7;
+$color2 : #9600ef;
+$color3 : #e2e2e2;
+$accent: #ffd52b;
+
+// Common to all
+body{
+    font-family :'Poppins', sans-serif;
+    box-sizing: border-box;
+}
