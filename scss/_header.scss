@@ -8,7 +8,6 @@
     place-items:center;
     height: 13vh;
 
-
     .logoText{
         grid-area:logoText;
         font-family: "Bauhaus 93";
@@ -18,16 +17,22 @@
         color:white;
         text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
         margin-left:3vw;
+        transition:transform .4s;
+        -webkit-transition:transform .4s;
+        -moz-transition:transform .4s;
+        -ms-transition:transform .4s;
+        -o-transition:transform .4s;
+
         &__end{
             color:$accent;
         }
 
         &:hover{
-            transform:scale(1.2);
-            -webkit-transform:scale(1.2);
-            -moz-transform:scale(1.2);
-            -ms-transform:scale(1.2);
-            -o-transform:scale(1.2);
+            transform:scale(1.05);
+            -webkit-transform:scale(1.05);
+            -moz-transform:scale(1.05);
+            -ms-transform:scale(1.05);
+            -o-transform:scale(1.05);
 }
     }
 
@@ -100,5 +105,4 @@
 
         }
     }
-    
 }
