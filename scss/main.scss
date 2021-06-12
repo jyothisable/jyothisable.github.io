@@ -8,11 +8,15 @@
 @import url('https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93');
 
 // Variables
-$color1 : #9600ef;
-$color2 : #5720b7;
+$color1 : #5720b7;
+$color2 : #9600ef;
 $color3 : #e2e2e2;
 $accent: #ffd52b;
-$font :'Poppins', sans-serif;
+
+// Common
+body{
+    font-family :'Poppins', sans-serif;
+}
 
 //Header
 .gridWrapper {
@@ -22,31 +26,97 @@ $font :'Poppins', sans-serif;
     gap: 1vw;
     grid-template-areas: 'logoText primaryNav secNav';
     place-items:center;
-    height: 12vh;
-}
+    height: 13vh;
 
-.logoText{
-    grid-area:logoText;
-    font-family: "Bauhaus 93";
-    font-size: 7vh;
-    letter-spacing: 0.05em;
-    text-align: left;
-    color:white;
-    text-shadow: 8px 8px 2px rgba(0, 0, 0, 0.3);
 
-    &__end{
-        color:$accent;
+    .logoText{
+        grid-area:logoText;
+        font-family: "Bauhaus 93";
+        font-size: 7vh;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color:white;
+        text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
+        margin-left:3vw;
+        &__end{
+            color:$accent;
+        }
     }
 
+    .primaryNav{
+        grid-area: primaryNav;
+        width:100%;
+        ul {
+            li{
+                display:inline;
+                padding: .4vw .6vw;
+                margin:1vw;
+                font-size:2.5vh;
+                color:white;
+
+                
+                &:hover{
+                    border-bottom: 5px solid $accent;
+                    border-radius: 3px;
+                    transition: border .4s ease 0s;
+                    -webkit-transition: border .4s ease 0s;
+                    -moz-transition: border .4s ease 0s;
+                    -ms-transition: border .4s ease 0s;
+                    -o-transition: border .4s ease 0s;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+}
+                &:focus,&:active{
+                    background:$color2;
+                    border: 3px solid $color2;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .secNav{
+        grid-area: secNav;
+        @extend .primaryNav;
+        .resume{
+            border:3px solid $accent;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            
+            &:hover{
+                    border:3px solid $accent;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    background-color: $color2;
+                    transition: color.4s ease, background-color.5s ease;
+                    -webkit-transition: color.4s ease, background-color.5s ease;
+                    -moz-transition: color.4s ease, background-color.5s ease;
+                    -ms-transition: color.4s ease, background-color.5s ease;
+                    -o-transition: color.4s ease, background-color.5s ease;
+}
+            img{
+                height:.8em;
+            }
+
+}
+    }
+    
 }
 
-.primaryNav{
-    grid-area: primaryNav;
-}
 
-.secNav{
-    grid-area: secNav;
-}
+
 
 
 
