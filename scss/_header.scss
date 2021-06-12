@@ -7,6 +7,8 @@
     grid-template-areas: 'logoText primaryNav secNav';
     place-items:center;
     height: 13vh;
+    width:100vw;
+    position:fixed;
 
     .logoText{
         grid-area:logoText;
@@ -17,23 +19,11 @@
         color:white;
         text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
         margin-left:3vw;
-        transition:transform .4s;
-        -webkit-transition:transform .4s;
-        -moz-transition:transform .4s;
-        -ms-transition:transform .4s;
-        -o-transition:transform .4s;
-
+        @include enlarge-trans;
         &__end{
             color:$accent;
         }
 
-        &:hover{
-            transform:scale(1.05);
-            -webkit-transform:scale(1.05);
-            -moz-transform:scale(1.05);
-            -ms-transform:scale(1.05);
-            -o-transform:scale(1.05);
-}
     }
 
     .primaryNav{

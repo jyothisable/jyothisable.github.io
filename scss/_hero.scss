@@ -1,0 +1,39 @@
+.hero {
+    height:100vh;
+    padding-top:13vh;
+    background:url("../images/hero-background.png") no-repeat fixed center;
+    display:flex;
+    place-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    .heroTitle {
+        width: 40vw;
+        margin:2vh;
+        p {
+            font-size:3vh;
+            color:white;
+            max-width:30vw;
+            line-height: 30px;
+        }
+        h1 {
+            font-size:8vh;
+            font-weight: bold;
+            color:white;
+        }
+    }
+    
+    .heroImage {
+        min-width: 250px;
+        max-width:25vw;
+        margin:2vh;
+        border-radius: 63px;
+        box-shadow: 13px 11px 7px rgba(0, 0, 0, 0.16);
+
+        img {
+            display: block;
+            width: 100%;
+            border-radius: 60px;
+            @include enlarge-trans;
+}
+    }
+}

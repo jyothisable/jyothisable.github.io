@@ -13,8 +13,26 @@ $color2 : #9600ef;
 $color3 : #e2e2e2;
 $accent: #ffd52b;
 
+//mixins
+//hover enlarge aimation
+@mixin enlarge-trans {
+    transition:transform .4s;
+    -webkit-transition:transform .4s;
+    -moz-transition:transform .4s;
+    -ms-transition:transform .4s;
+    -o-transition:transform .4s;
+    &:hover{
+        transform:scale(1.05);
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        -ms-transform:scale(1.05);
+        -o-transform:scale(1.05);
+}
+}
 // Common to all
 body{
     font-family :'Poppins', sans-serif;
+    letter-spacing:.06em;
     box-sizing: border-box;
+    scroll-padding: 13vh;
 }
