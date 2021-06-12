@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
   <title>JyothisAble</title>
 </head>
 <body>
-  <header>
+  <header class='gridWrapper'>
     <div class="logoText"><a href="index.html">Jyothis<span class='logoText__end'>Able</span></a></div>
     <nav class="primaryNav">
-      ><ul>
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">About</a></li>
@@ -24,68 +25,67 @@
     </nav>
   </header>
   
-  <section class="hero">
-    <div class="heroTitle">
-      <p>Hey, there!</p>
-      <h1>I'm Athul Jyothis.</h1>
-      <p>An Engineering student from IIT Bhubaneswar aspiring to become a Front End Developer</p>
-      <button class='heroTitle__button buttonPrimary'>My Projects</button>
-    </div>
-    <div class="heroImage"><div class="heroImage__container"><img src="images/athul-pic.png" alt="author image"></div></div>
-  </section>
-
-  <section class = 'featureProjects'>
-    <h1>Featured Projects</h1>
-    <div class="cardContainer">
-      <div class="card">
-        <img src="images/card-image.png" alt="project image">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quos labore nihil quisquam voluptatum cupiditate.</p>
-        <button class="buttonPrimary"><a href="">view details</a></button>
-        <button class="buttonPrimary"><img src="images/icon-github-square.png" alt="github icon"></button></div>
-      <div class="card">
-        <img src="" alt="">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium recusandae eius voluptatum nobis commodi fugit?</p>
-        <button class="buttonPrimary"><a href="">view details</a></button>
-        <button class="buttonPrimary"><img src="images/icon-github-square.png" alt="github icon"></button></div>
-      <div class="card">
-        <img src="" alt="">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nulla architecto officia quis culpa beatae!</p>
-        <button class="buttonPrimary"><a href="">view details</a></button>
-        <button class="buttonPrimary"><img src="images/icon-github-square.png" alt="github icon"></button></div>
-    </div>
-    <button class="buttonPrimary"><a href="">see more</a></button>
-  </section>
-
-  <section class = 'about'>
-    <h1>About Me</h1>
-    <div class="imgContainer"><img src="images/athul-pic.png" alt="author's image" /></div>
-    <p>My name is Athul Jyothis. I'm currently perusing M.Tech from IIT Bhubaneswar. I was born and raised in Kerala, India.</p>
-    <p>Technology always inspired me, from the day I got chance to lay my hands on Nokia 3310 to this very day, there is always something new to learn and solve.</p>
-    <p>I see life as a game in campaign mode. One can choose there own difficulty and get rewards accordingly. Reality is not a bug, its the best feature of this game.</p>
-  </section>
-
-  <section class="contact">
-    <form action="index.html" method="POST">
-      <p>Usually replies within a day or two</p>
-      <label for="name">Name</label>
-      <input type="text" name="name" id = 'name'>
-      <label for="email">Email</label>
-      <input type="email" name="email" id = 'email'>
-      <label for='query'>How can I help ?</label>
-      <input type='textarea' name='query' id = 'query' rows ='5' cols='10'>
-      <button class="buttonPrimary" type='submit'>Send</button>
-    </form>
-    <p>For more details download my resume</p>
-    <button class='resume'>
-      <a href="#">
-        <img src="images/icon-file-download.png" alt="download icon"> 
-        Resume
-      </a>
-    </button>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="heroTitle">
+        <p>Hey, there!</p>
+        <h1>I'm Athul Jyothis.</h1>
+        <p>An Engineering student from IIT Bhubaneswar aspiring to become a Software Engineer</p>
+        <button class='heroTitle__button buttonPrimary'>My Projects</button>
+      </div>
+      <div class="heroImage"><div class="heroImage__container"><img src="images/athul-pic.png" alt="author image"></div></div>
+    </section>
+    <section class = 'featureProjects'>
+      <h1>Featured Projects</h1>
+      <div class="cardContainer">
+        <div class="card">
+          <img src="images/card-image.png" alt="project image">
+          <h2>Project Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quos labore nihil quisquam voluptatum cupiditate.</p>
+          <button class="buttonPrimary"><a href="">view details</a></button>
+          <button class="buttonPrimary"><img src="images/icon-github-square.png" alt="github icon"></button></div>
+        <div class="card">
+          <img src="" alt="">
+          <h2>Project Title</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium recusandae eius voluptatum nobis commodi fugit?</p>
+          <button class="buttonPrimary"><a href="">view details</a></button>
+          <button class="buttonPrimary"><img src="images/icon-github-square.png" alt="github icon"></button></div>
+        <div class="card">
+          <img src="" alt="">
+          <h2>Project Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nulla architecto officia quis culpa beatae!</p>
+          <button class="buttonPrimary"><a href="">view details</a></button>
+          <button class="buttonPrimary"><img src="images/icon-github-square.png" alt="github icon"></button></div>
+      </div>
+      <button class="buttonPrimary"><a href="">see more</a></button>
+    </section>
+    <section class = 'about'>
+      <h1>About Me</h1>
+      <div class="imgContainer"><img src="images/athul-pic.png" alt="author's image" /></div>
+      <p>My name is Athul Jyothis. I'm currently perusing M.Tech from IIT Bhubaneswar. I was born and raised in Kerala, India.</p>
+      <p>Technology always inspired me, from the day I got chance to lay my hands on Nokia 3310 to this very day, there is always something new to learn and solve.</p>
+      <p>I see life as a game in campaign mode. One can choose there own difficulty and get rewards accordingly. Reality is not a bug, its the best feature of this game.</p>
+    </section>
+    <section class="contact">
+      <form action="index.html" method="POST">
+        <p>Usually replies within a day or two</p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id = 'name'>
+        <label for="email">Email</label>
+        <input type="email" name="email" id = 'email'>
+        <label for='query'>How can I help ?</label>
+        <input type='textarea' name='query' id = 'query' rows ='5' cols='10'>
+        <button class="buttonPrimary" type='submit'>Send</button>
+      </form>
+      <p>For more details download my resume</p>
+      <button class='resume'>
+        <a href="#">
+          <img src="images/icon-file-download.png" alt="download icon">
+          Resume
+        </a>
+      </button>
+    </section>
+  </main>
   
   <footer>
     <p>© 2021 Athul Jyothis. All rights reserved.</p>

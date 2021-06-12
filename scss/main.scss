@@ -3,4 +3,53 @@
 @import "resets/_reset-local.scss";
 @import "resets/_typography.scss";
 
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93');
+
+// Variables
+$color1 : #9600ef;
+$color2 : #5720b7;
+$color3 : #e2e2e2;
+$accent: #ffd52b;
+$font :'Poppins', sans-serif;
+
+//Header
+.gridWrapper {
+    background: $color1;
+    display:grid;
+    grid-column: repeat(3,1fr);
+    gap: 1vw;
+    grid-template-areas: 'logoText primaryNav secNav';
+    place-items:center;
+    height: 12vh;
+}
+
+.logoText{
+    grid-area:logoText;
+    font-family: "Bauhaus 93";
+    font-size: 7vh;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color:white;
+    text-shadow: 8px 8px 2px rgba(0, 0, 0, 0.3);
+
+    &__end{
+        color:$accent;
+    }
+
+}
+
+.primaryNav{
+    grid-area: primaryNav;
+}
+
+.secNav{
+    grid-area: secNav;
+}
+
+
+
+
+
 
