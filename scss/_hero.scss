@@ -3,20 +3,21 @@
     padding-top:13vh;
     background:url("../images/hero-background.png") no-repeat fixed center;
     display:flex;
-    place-items: center;
+    align-items: center;
     justify-content:center;
     flex-wrap: wrap;
     .heroTitle {
         width: 40vw;
-        margin:2vh;
+        font-family :'Verdana','Poppins', sans-serif;
+        margin-left:2vw;
         p {
-            font-size:3vh;
+            font-size:clamp(10px,calc(10px + 1vw),20px);
             color:white;
-            max-width:30vw;
+            margin-right:50px;
             line-height: 30px;
         }
         h1 {
-            font-size:8vh;
+            font-size:clamp(12px,calc(10px + 5vw),55px);
             font-weight: bold;
             color:white;
         }
