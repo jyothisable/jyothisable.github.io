@@ -74,5 +74,9 @@ body{
     font-size:20px;
     letter-spacing:.03em;
     box-sizing: border-box;
-    scroll-padding: 130px;
+}
+
+[id] {
+    scroll-margin-top: 10vh; 
+
 }

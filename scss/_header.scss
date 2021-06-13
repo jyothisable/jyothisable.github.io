@@ -1,12 +1,14 @@
 
 .flexHeader {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
     background: $color1;
     display:flex;
     height: 11vh;
     width:100vw;
     justify-content: center;
     align-items:center;
-    position:fixed;
     z-index:20;
 
     .logoText{
