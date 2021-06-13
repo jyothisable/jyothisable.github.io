@@ -1,8 +1,8 @@
 .featuredProjects{
-    background-color: $color1;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
     h1{
         font-size:clamp(20px,calc(38px+5vw),50px);
-        font-weight:500;
+        font-weight:bold;
         letter-spacing:.06em;
         text-align: center;
         padding:1em;
@@ -18,16 +18,14 @@
         .card{
             font-size: clamp(.5em,calc(.7em + 1vw),2em);
             width: 13.7em;
-            backdrop-filter: drop-shadow(13px 1px 9px rgb(250, 21, 21));
-            height: 20em;
-            background: rgba(7, 8, 12, 0.13);
-            // backdrop-filter: blur(400px);
+            background: rgba( 255, 255, 255, 0.10 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 7.5px );
+            -webkit-backdrop-filter: blur( 7.5px );
+            border-radius: 45px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            height: 18em;
             margin:10px;
-            border-radius:35px;
-            -webkit-border-radius:35px;
-            -moz-border-radius:35px;
-            -ms-border-radius:35px;
-            -o-border-radius:35px;
             display:flex;
             flex-flow: column;
             align-items:center;
@@ -36,12 +34,14 @@
 
             >img{
                 width: 13.7em;
+                height: 8em;
             }
 
             h2{
                 color:white;
                 font-size: 1em;
                 margin:.4em;
+                font-weight:500;
             }
 
             p{
@@ -49,6 +49,7 @@
                 color:white;
                 margin:.5em;
                 margin-top:0;
+                opacity:.8;
             }
             
             &__buttons{
