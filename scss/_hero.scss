@@ -1,6 +1,6 @@
 .hero {
-    min-height:100vh;
-    padding-top:11vh;
+    min-height:88vh;
+    width:100vw;
     background:url("../images/hero-background.png") no-repeat fixed center;
     display:flex;
     align-items: center;
@@ -34,10 +34,10 @@
     }
     
     .heroImage {
-        width:clamp(180px,30vw,300px);
+        width:clamp(180px,30vw,330px);
         margin:2vh;
         border-radius: 63px;
-        box-shadow: 13px 11px 7px rgba(0, 0, 0, 0.16);
+        box-shadow: 9px 8px 9px rgba(0, 0, 0, 0.16);
         @extend %enlarge-trans;
         img {
             display: block;
