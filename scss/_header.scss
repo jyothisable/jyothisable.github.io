@@ -63,17 +63,18 @@
                     -o-border-radius: 3px;
 }
                 &:active {
-                    transform: scale(1.01);
-                    -webkit-transform: scale(1.01);
-                    -moz-transform: scale(1.01);
-                    -ms-transform: scale(1.01);
-                    -o-transform: scale(1.01);
-                    transition: transform ease;
-                    -webkit-transition: transform ease;
-                    -moz-transition: transform ease;
-                    -ms-transition: transform ease;
-                    -o-transition: transform ease;
-            }
+                    transform: scale(.95);
+                    -webkit-transform: scale(.95);
+                    -moz-transform: scale(.95);
+                    -ms-transform: scale(.95);
+                    -o-transform: scale(.95);
+                    transition: transform .08 ease;
+                    -webkit-transition: transform .08 ease;
+                    -moz-transition: transform .08 ease;
+                    -ms-transition: transform .08 ease;
+                    -o-transition: transform .08 ease;
+}
+                    }
         }
     }
 
