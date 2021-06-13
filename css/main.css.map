@@ -8,7 +8,8 @@
         "../scss/resets/_reset-local.scss",
         "../scss/resets/_typography.scss",
         "../scss/_header.scss",
-        "../scss/_hero.scss"
+        "../scss/_hero.scss",
+        "../scss/_featured-projects.scss"
     ],
     "names": [],
     "file": "main.css"
