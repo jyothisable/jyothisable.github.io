@@ -4,18 +4,18 @@
     display:flex;
     height: 13vh;
     width:100vw;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
     position:fixed;
+    z-index:20;
 
     .logoText{
         font-family: "Bauhaus 93";
-        font-size: 40rem;
+        font-size:clamp(12px,calc(20px + 2vw),50px);
         letter-spacing: 0.05rem;
-        text-align: left;
         color:white;
-        text-shadow: 8rem 8rem 0px rgba(0, 0, 0, 0.3);
-        margin-left:3vw;
+        text-shadow: .15em .15em 0px rgba(0, 0, 0, 0.3);
+        margin-left:8vw;
         @include enlarge-trans;
         &__end{
             color:$accent;
@@ -31,64 +31,69 @@
             justify-content:center;
             li{
                 display:inline;
-                padding: .4vw .6vw;
-                margin:1vw;
-                font-size:15rem;
-                color:white;
-
+                padding: 0.2em .1em;
+                margin:.3em;
+                font-size:clamp(1rem,calc(1rem + 2vw),20rem);
+                color:rgba(255, 255, 255, 0.836);
+                border-bottom: 4px solid $color1;
+                border-radius: 3px;
+                transition: border .4s ease 0s;
+                -webkit-transition: border .4s ease 0s;
+                -moz-transition: border .4s ease 0s;
+                -ms-transition: border .4s ease 0s;
+                -o-transition: border .4s ease 0s;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
                 
                 &:hover{
                     border-bottom: 4px solid $accent;
                     border-radius: 3px;
-                    transition: border .4s ease 0s;
-                    -webkit-transition: border .4s ease 0s;
-                    -moz-transition: border .4s ease 0s;
-                    -ms-transition: border .4s ease 0s;
-                    -o-transition: border .4s ease 0s;
+                    color:white;
+                    transition: border .4s ease 0s,color .4s ease;
+                    -webkit-transition: border .4s ease 0s,color .4s ease;
+                    -moz-transition: border .4s ease 0s,color .4s ease;
+                    -ms-transition: border .4s ease 0s,color .4s ease;
+                    -o-transition: border .4s ease 0s,color .4s ease;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     -ms-border-radius: 3px;
                     -o-border-radius: 3px;
 }
-                &:focus,&:active{
-                    background:$color2;
-                    border: 3px solid $color2;
-                    border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-                }
             }
         }
     }
 
     .secNav{
         @extend .primaryNav;
+
         .resume{
             border:3px solid $accent;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            
-            &:hover{
+            border-radius: 15px;
+            // margin-bottom:1rem;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            &:hover
+{
                     border:3px solid $accent;
-                    border-radius: 20px;
-                    -webkit-border-radius: 20px;
-                    -moz-border-radius: 20px;
-                    -ms-border-radius: 20px;
-                    -o-border-radius: 20px;
+                    border-radius: 15px;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    -ms-border-radius: 15px;
+                    -o-border-radius: 15px;
                     background-color: $color2;
                     transition: color.4s ease, background-color.5s ease;
                     -webkit-transition: color.4s ease, background-color.5s ease;
                     -moz-transition: color.4s ease, background-color.5s ease;
                     -ms-transition: color.4s ease, background-color.5s ease;
                     -o-transition: color.4s ease, background-color.5s ease;
-            }
+}
             img{
                 height:.8em;
+                padding:.1em;
             }
 
         }
