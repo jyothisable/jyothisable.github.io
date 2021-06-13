@@ -13,9 +13,9 @@ $color2 : #9600ef;
 $color3 : #e2e2e2;
 $accent: #ffd52b;
 
-//mixins
+//Place holders
 //hover enlarge aimation
-@mixin enlarge-trans {
+%enlarge-trans {
     transition:transform .4s;
     -webkit-transition:transform .4s;
     -moz-transition:transform .4s;
@@ -27,8 +27,47 @@ $accent: #ffd52b;
         -moz-transform:scale(1.05);
         -ms-transform:scale(1.05);
         -o-transform:scale(1.05);
+    }
+
+}
+
+// Important button
+%important-button {
+    background: $accent;
+    opacity: .9;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size:clamp(8px,calc( 3vw),25px);
+    padding: .4em .8em;
+    font-style: poppins;
+    font-weight: bold;
+    letter-spacing:.08em;
+    border: 3px solid black;
+    box-shadow: .3em .3em .2em rgba(0, 0, 0, 0.16);
+    &:hover 
+{
+        opacity: 1;
+    }
+
+    &:active {
+        opacity: 1;
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -moz-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        -o-transform: scale(1.01);
+        transition: transform ease;
+        -webkit-transition: transform ease;
+        -moz-transition: transform ease;
+        -ms-transition: transform ease;
+        -o-transition: transform ease;
 }
 }
+
+
 // Common to all
 body{
     font-family :'Poppins', sans-serif;
