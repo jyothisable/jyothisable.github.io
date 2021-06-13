@@ -1,21 +1,20 @@
 
-.gridWrapper {
+.flexHeader {
     background: $color1;
-    display:grid;
-    grid-column: repeat(3,1fr);
-    gap: 1vw;
-    place-items:center;
+    display:flex;
     height: 13vh;
     width:100vw;
+    justify-content: space-between;
+    align-items:center;
     position:fixed;
 
     .logoText{
         font-family: "Bauhaus 93";
-        font-size: 3vw;
-        letter-spacing: 0.05em;
+        font-size: 40rem;
+        letter-spacing: 0.05rem;
         text-align: left;
         color:white;
-        text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
+        text-shadow: 8rem 8rem 0px rgba(0, 0, 0, 0.3);
         margin-left:3vw;
         @include enlarge-trans;
         &__end{
@@ -28,11 +27,13 @@
         width:100%;
         font-weight: 500;
         ul {
+            display:flex;
+            justify-content:center;
             li{
                 display:inline;
                 padding: .4vw .6vw;
                 margin:1vw;
-                font-size:1.2vw;
+                font-size:15rem;
                 color:white;
 
                 
