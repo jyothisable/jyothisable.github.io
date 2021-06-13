@@ -28,12 +28,11 @@
         margin:2vh;
         border-radius: 63px;
         box-shadow: 13px 11px 7px rgba(0, 0, 0, 0.16);
-
+        @include enlarge-trans;
         img {
             display: block;
             width: 100%;
             border-radius: 60px;
-            @include enlarge-trans;
 }
     }
 }

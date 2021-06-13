@@ -4,7 +4,7 @@
 @import "resets/_typography.scss";
 
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93');
 
 // Variables
@@ -35,4 +35,5 @@ body{
     letter-spacing:.06em;
     box-sizing: border-box;
     scroll-padding: 13vh;
+    font-size: clamp(100%,16px + 1vw, 24px);
 }
