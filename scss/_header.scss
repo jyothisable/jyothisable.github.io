@@ -29,10 +29,11 @@
         ul {
             display:flex;
             justify-content:center;
+            align-items:center;
             li{
                 display:inline;
                 padding: 0.2em .1em;
-                margin:.3em;
+                margin:.5em;
                 font-size:clamp(1rem,calc(1rem + 2vw),20rem);
                 color:rgba(255, 255, 255, 0.836);
                 border-bottom: 4px solid $color1;
