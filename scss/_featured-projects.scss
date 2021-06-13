@@ -22,7 +22,7 @@
         .card{
             font-size: clamp(.5em,calc(.7em + 1vw),2em);
             width: 11.7em;
-            height: 17em;
+            // height: 17em;
             background: rgba( 255, 255, 255, 0.10 );
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
             backdrop-filter: blur( 7.5px );
@@ -64,6 +64,7 @@
                 align-items:center;
                 justify-content:space-between;
                 color:black;
+                margin-bottom:.5em;
                 &__main{
                     @extend %important-button;
                     font-size: .65em;
@@ -88,11 +89,11 @@
     .button-seemore{
         @extend %important-button;
         display:block;
-        margin: 8vh auto;
+        margin: 4vw auto;
         font-weight: 500;
         font-size: clamp(.3em,calc(.5em + 1vw),2em);
         position:relative;
-        bottom:4vh;
+        bottom:3vw;
     }
     
 }
