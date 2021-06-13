@@ -1,0 +1,79 @@
+.featuredProjects{
+    background-color: $color1;
+    h1{
+        font-size:clamp(20px,calc(38px+5vw),50px);
+        font-weight:500;
+        letter-spacing:.06em;
+        text-align: center;
+        padding:1em;
+        color:white;
+    }
+
+    .cardContainer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+
+        .card{
+            font-size: clamp(.5em,calc(.7em + 1vw),2em);
+            width: 13.7em;
+            backdrop-filter: drop-shadow(13px 1px 9px rgb(250, 21, 21));
+            height: 20em;
+            background: rgba(7, 8, 12, 0.13);
+            // backdrop-filter: blur(400px);
+            margin:10px;
+            border-radius:35px;
+            -webkit-border-radius:35px;
+            -moz-border-radius:35px;
+            -ms-border-radius:35px;
+            -o-border-radius:35px;
+            display:flex;
+            flex-flow: column;
+            align-items:center;
+            text-align: center;
+            @extend %enlarge-trans;
+
+            >img{
+                width: 13.7em;
+            }
+
+            h2{
+                color:white;
+                font-size: 1em;
+                margin:.4em;
+            }
+
+            p{
+                font-size:.6em;
+                color:white;
+                margin:.5em;
+                margin-top:0;
+            }
+            
+            &__buttons{
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                color:black;
+                &__main{
+                    @extend %important-button;
+                    font-size: .65em;
+                    margin:.2em;
+                }
+
+                &__icon{
+                    @extend %important-button;
+                    margin:.2em;
+                    img{
+                        display:block;
+                        margin: 0 auto;
+                        height:1.1em;
+                    }
+                    padding: 0.1em 0.2em;
+                }
+            }
+}
+    }
+    
+}
