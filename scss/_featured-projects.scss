@@ -3,12 +3,12 @@
     background: linear-gradient(to right, #4A00E0, #8E2DE2); 
     width:100vw;
     h1{
-        font-size:clamp(12px,calc(30px+5vw),50px);
+        font-size:clamp(12px,calc(30px+6vw),50px);
         font-weight:bold;
         letter-spacing:.06em;
         text-align: center;
-        padding-bottom:1em;
-        padding-top:1.4em;
+        padding-bottom:.8em;
+        padding-top:1.2em;
 
         color:white;
     }
@@ -20,7 +20,7 @@
         align-items:center;
 
         .card{
-            font-size: clamp(.5em,calc(.7em + 1vw),2em);
+            font-size: clamp(.5em,calc(.7em + 1vw),1.3em);
             width: 11.7em;
             // height: 17em;
             background: rgba( 255, 255, 255, 0.10 );
@@ -89,11 +89,11 @@
     .button-seemore{
         @extend %important-button;
         display:block;
-        margin: 4vw auto;
+        margin: 3vw auto 1.5vw auto;
         font-weight: 500;
-        font-size: clamp(.3em,calc(.5em + 1vw),2em);
+        font-size: clamp(.3em,calc(.3em + 1vw),2em);
         position:relative;
-        bottom:3vw;
+        bottom:1.5vw;
     }
     
 }
