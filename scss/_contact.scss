@@ -12,7 +12,8 @@
 
         form{
         font-size: clamp(.5em,calc(.4em + 1vw),.9em);
-        width:30vw;
+        width:60vw;
+        max-width:500px;
         margin:0 auto;
         display:flex;
         flex-direction: column;
@@ -38,9 +39,10 @@
         
         button{
             @extend %important-button;
-            font-weight: 500;;
-            margin:1em;
-            font-size:1.3em;
+            font-weight: 500;
+            width:30%;
+            margin:1em auto;
+            font-size:1em;
             // padding:0 -3em;
         }
 
@@ -48,18 +50,19 @@
         
     }
     .social{
-        width:30vw;
-
+        width:65vw;
+        max-width:500px;
         display:flex;
-        margin:auto;
-        justify-content:center;
+        margin:0 auto;
+        margin-top:1em;
+        justify-content:space-evenly;
 
         .fa {
-        padding: 10px;
-        font-size: 25px;
-        width: 50px;
+        flex-shrink: 1;
+        padding: .5em;
+        font-size: clamp(.5em,calc(.7em + 1vw),2em);
+        width: 2.5em;
         text-align: center;
-        margin: 10px;
         background:#e2e2e2;
         border-radius:10px;
         border: 2px solid #000;
