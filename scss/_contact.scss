@@ -19,11 +19,13 @@
         label{
             display:block;
             color:white;
+            margin-left:4px;
                 }
         input,textarea{
             border-radius: 10px;
             width:100%;
             opacity: .8;
+            font-size:.9em;
         }
         .form__reply{
             grid-area:text;
@@ -31,6 +33,7 @@
             text-align:center;
             display:block;
             margin: auto;
+            margin-bottom: .5em;
         }
         
         button{
