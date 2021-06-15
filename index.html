@@ -92,8 +92,8 @@
     <section class="contact">
       <h1>Contact Me</h1>
       <form action="index.html" method="POST">
-        <p>Usually replies within a day or two</p>
-        <div class="form__wrapper">
+        <p class='form__reply'>Usually replies within a day or two</p>
+        <p class="form__wrapper">
           <div class="form__name">
             <label for="name">Name</label>
             <input type="text" name="name" id = 'name'>
@@ -102,10 +102,11 @@
             <label for="email">Email</label>
             <input type="email" name="email" id = 'email'>
           </div>
-        </div>
+        </>
+
         <div class="form__query">
           <label for='query'>How can I help ?</label>
-          <input name='query' id = 'query'>
+          <textarea name='query' id = 'query'rows='4'></textarea>
         </div>
         <button type='submit'>Send</button>
       </form>
