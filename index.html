@@ -90,15 +90,24 @@
 
     <!--Contact-->
     <section class="contact">
+      <h1>Contact Me</h1>
       <form action="index.html" method="POST">
         <p>Usually replies within a day or two</p>
-        <label for="name">Name</label>
-        <input type="text" name="name" id = 'name'>
-        <label for="email">Email</label>
-        <input type="email" name="email" id = 'email'>
-        <label for='query'>How can I help ?</label>
-        <input type='textarea' name='query' id = 'query' rows ='5' cols='10'>
-        <button class="buttonPrimary" type='submit'>Send</button>
+        <div class="form__wrapper">
+          <div class="form__name">
+            <label for="name">Name</label>
+            <input type="text" name="name" id = 'name'>
+          </div>
+          <div class="form__email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id = 'email'>
+          </div>
+        </div>
+        <div class="form__query">
+          <label for='query'>How can I help ?</label>
+          <input name='query' id = 'query'>
+        </div>
+        <button type='submit'>Send</button>
       </form>
       <p>For more details download my resume</p>
       <button class='resume'>
