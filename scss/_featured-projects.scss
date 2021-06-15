@@ -69,6 +69,7 @@
                     font-size: .65em;
                     margin:.2em;
                     font-weight: 500;
+                    
                 }
 
                 &__icon{
@@ -77,9 +78,10 @@
                     img{
                         display:block;
                         margin: 0 auto;
-                        height:1.3em;
+                        height:.7em;
+                        min-height: 15px;;
                     }
-                    padding: 0.1em 0.2em;
+                    padding: 0.3em;
                 }
             }
 }
