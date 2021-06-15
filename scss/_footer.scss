@@ -1,0 +1,9 @@
+footer{
+    p{
+        color:white;
+        font-size: clamp(.3em,calc(.2em + .7vw),1em);
+        background: black;
+        padding:1em;
+        text-align:center;
+    }
+}
