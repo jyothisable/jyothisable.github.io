@@ -35,7 +35,8 @@
     
     .heroImage {
         width:clamp(180px,30vw,330px);
-        margin:4vh 2vh;
+        margin:2vw;
+        // margin-right: 2vw;
         border-radius: 63px;
         box-shadow: 9px 8px 9px rgba(0, 0, 0, 0.16);
         @extend %enlarge-trans;

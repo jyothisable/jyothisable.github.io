@@ -6,9 +6,9 @@
     background: $color1;
     display:flex;
     min-height: 10vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
-    z-index:20;
+    z-index:1;
 
     .logoText{
         font-family: "Bauhaus 93";
@@ -32,11 +32,13 @@
             display:flex;
             justify-content:center;
             align-items:center;
+            margin-left:4vw;
+            margin-right:8vw;
             li{
                 display:inline;
                 padding: 0.2em .1em;
                 margin:.5em;
-                font-size:clamp(1rem,calc(1rem + 2vw),20rem);
+                font-size:clamp(1rem,calc(1.6vw),20rem);
                 color:rgba(255, 255, 255, 0.836);
                 border-bottom: 4px solid $color1;
                 border-radius: 3px;
@@ -77,22 +79,18 @@
                     -o-transition: transform .08 ease;
 }
                     }
-        }
-    }
 
-    .secNav{
-        @extend .primaryNav;
-
-        .resume{
-            border:3px solid $accent;
-            border-radius: 15px;
-            padding: 0.2em .2em;
-            -webkit-border-radius: 15px;
-            -moz-border-radius: 15px;
-            -ms-border-radius: 15px;
-            -o-border-radius: 15px;
-            &:hover
-{
+            .resume{
+                margin-left:auto;
+                border:3px solid $accent;
+                border-radius: 15px;
+                padding: 0.2em .2em;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                
+                &:hover{
                     border:3px solid $accent;
                     border-radius: 15px;
                     -webkit-border-radius: 15px;
@@ -112,11 +110,23 @@
             }
 
         }
+
+        }
     }
+
+    
 }
 
 
 
-@media screen and (min-width: 770px) {
-
+@media screen and (max-width: 770px) {
+    .logoText, .secNav{display:none}
+    .primaryNav{
+        position:fixed;
+        display:block;
+        height:14vh;
+        width:100%;
+        z-index: 2;
+        flex-direction:row;
+    }
 }
