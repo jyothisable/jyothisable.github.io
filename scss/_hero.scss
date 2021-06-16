@@ -22,7 +22,8 @@
         
         h1 {
             text-shadow: .2em .2em .2em rgba(0, 0, 0, 0.24);
-            font-size:clamp(12px,calc(6px + 5vw),55px);
+            // font-size:clamp(12px,calc(6px + 5vw),55px);
+            font-size:clamp(1.2em,calc(.4em + 3vw),3em);
             font-weight: bold;
             color:white;
         }
