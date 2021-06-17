@@ -762,13 +762,13 @@ body {
 
 .about__container__text {
   max-width: 40%;
-  min-width: 50vh;
+  min-width: 45vh;
   font-size: .8em;
   padding: 1em;
   letter-spacing: .06em;
 }
 
-.about__container__text P + p {
+.about__container__text p + p {
   margin: 2vh 0;
 }
 

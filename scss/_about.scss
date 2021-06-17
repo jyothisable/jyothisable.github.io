@@ -25,12 +25,11 @@
         }
         &__text{
             max-width:40%;
-            min-width:50vh;
+            min-width:45vh;
             font-size:.8em;
             padding:1em;
             letter-spacing:.06em;
-            // min-width:212px;
-            P +p {
+            p +p {
                 margin:2vh 0;
             }
         }
