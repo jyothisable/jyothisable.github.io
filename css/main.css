@@ -866,7 +866,7 @@ footer p {
     z-index: 3;
     position: fixed;
     top: 0;
-    right: 4vw;
+    right: 0;
     bottom: 0px;
     width: 60%;
     height: 60vh;
@@ -897,7 +897,7 @@ footer p {
     position: fixed;
     z-index: 4;
     top: 4vh;
-    right: 10vw;
+    right: 5vw;
     color: white;
     cursor: pointer;
   }
