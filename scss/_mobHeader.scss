@@ -1,0 +1,47 @@
+@media screen and (max-width: 770px) {
+    // .logoText {display:none}
+        
+    .flexHeader{
+        .mobileNav{
+            z-index: 3;
+            position: fixed;
+            top: 0vh;
+            right: 0vw;
+            bottom: 0px;
+            width:50%;
+            height: 80vh;
+            background: rgba(0, 0, 0, 0.671);
+            color: white;
+            transform: translateY(-100%) translateX(-100%);
+            display:flex;
+            transition: transform 0.2s;
+            flex-direction: column;
+            justify-content:flex-start;
+            border-radius: 0 0 0 80%;
+            li:first-of-type{
+                margin-top:11vh;
+            }
+
+        .showNav {
+        transform: translateY(0) translateX(0);
+        }
+
+
+    }
+
+    .ham {
+        display:block;
+        position: fixed;
+        z-index: 4;
+        top: 3vw;
+        right: 5vw;
+        color:white;
+        cursor: pointer;
+        .fa-close{
+            display:none;
+        }
+    }
+        
+    }
+
+}
