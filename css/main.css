@@ -719,7 +719,7 @@ body {
 .featuredProjects .cardContainer .card__buttons__icon img {
   display: block;
   margin: 0 auto;
-  height: .7em;
+  height: .5em;
   min-height: 15px;
 }
 
