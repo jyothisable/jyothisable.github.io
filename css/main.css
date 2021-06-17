@@ -865,12 +865,12 @@ footer p {
   .flexHeader .menu {
     z-index: 3;
     position: fixed;
-    top: 0vh;
-    right: 0vw;
+    top: 0;
+    right: 4vw;
     bottom: 0px;
-    width: 50%;
-    height: 80vh;
-    background: linear-gradient(to bottom left, black, rgba(0, 0, 0, 0.445));
+    width: 60%;
+    height: 60vh;
+    background: linear-gradient(to bottom left, black, rgba(0, 0, 0, 0.315));
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
@@ -896,8 +896,8 @@ footer p {
     display: block;
     position: fixed;
     z-index: 4;
-    top: 3vh;
-    right: 5vw;
+    top: 4vh;
+    right: 10vw;
     color: white;
     cursor: pointer;
   }
