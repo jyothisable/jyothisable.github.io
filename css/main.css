@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
-@import url("https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93");
+@import url("https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   line-height: 1.15;
@@ -489,8 +489,8 @@ body {
 }
 
 .flexHeader .logoText {
-  font-family: "Bauhaus 93";
-  font-size: clamp(15px, calc(22px + 2vw), 50px);
+  font-family: "Skranji";
+  font-size: clamp(30rem, calc(5vw), 40rem);
   letter-spacing: 0.05rem;
   color: white;
   text-shadow: 0.15em 0.15em 0px rgba(0, 0, 0, 0.3);
@@ -896,7 +896,7 @@ footer p {
     display: block;
     position: fixed;
     z-index: 4;
-    top: 4vh;
+    top: 3vh;
     right: 5vw;
     color: white;
     cursor: pointer;
