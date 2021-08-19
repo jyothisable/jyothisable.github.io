@@ -1,6 +1,9 @@
 .hero {
     min-height:88vh;
-    background:url("../images/hero-background.png") no-repeat fixed center;
+    background:url("../images/cool-background3.jpg") no-repeat fixed center;
+    // background-image: repeating-linear-gradient(to bottom right, #4805cf, #8427d4); 
+    // background: url("../images/cool-background1.png") repeat;
+    background-size: 100% 100%;
     display:flex;
     align-items: center;
     justify-content:space-evenly;
