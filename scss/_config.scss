@@ -4,36 +4,59 @@
 @import "resets/_typography.scss";
 
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap");
 
 //icons
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 // Variables
-$color1 : #5720b7;
-$color2 : #9600ef;
-$color3 : #e2e2e2;
+$color1: #5720b7;
+$color2: #9600ef;
+$color3: #e2e2e2;
 $accent: #ffd52b;
-
-
 
 // Common to all
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family :'Poppins', sans-serif;
-    font-display: swap;
-    font-size:20px;
-    letter-spacing:.03em;
-    box-sizing: border-box;
-
+body {
+  font-family: "Poppins", sans-serif;
+  font-display: swap;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
 }
 
 [id] {
-    scroll-margin-top: 10vh; 
+  scroll-margin-top: 10vh;
+}
 
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
