@@ -1,5 +1,5 @@
-# jyothisable.github.io
-This is my first portfolio website to showcase my projects. This is fully responsive website made using HTML, SCSS and Javascript (no frameworks used)
+# ARCHIVED - Portfolio website (jyothisable.github.io)
+This is my first portfolio website to showcase my projects. This is a fully responsive website made using HTML, SCSS, and JavaScript (no frameworks used)
 
 <img src="images\jyothisable.gif.gif" width=900>
 
